@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<mavlink>
+  <include>common.xml</include>
+  <version>3</version>
+  <messages>
+    <message id="65537" name="REGISTER">
+      <description>Register a new system</description>
+      <field type="uint32_t" name="agent_id"></field>
+    </message>
+    <message id="65538" name="UNREGISTER">
+      <description>Unregister a system</description>
+      <field type="uint32_t" name="agent_id"></field>
+    </message>
+    <message id="65539" name="REGISTER_ACK">
+      <description>Register Acknowledgement</description>
+      <field type="uint8_t" name="system_id"></field>
+    </message>
+    <message id="65540" name="UNREGISTER_ACK">
+      <description>Unregister Acknowledgement</description>
+    </message>
+  </messages>
+</mavlink>
